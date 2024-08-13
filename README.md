@@ -43,36 +43,38 @@ cpu：12400f
 ‍
 
 准备工作
+```console
+ sudo apt-get update
 
-> sudo apt-get update
->
-> sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl
-> zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-
-> core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc
-> unzip python-pyelftools python3-pyelftools device-tree-compiler libfdt-dev
-> libfdt1 libssl-dev liblz4-tool python-dev openssl
-
+ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl
+ zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-
+ core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc
+ unzip python-pyelftools python3-pyelftools device-tree-compiler libfdt-dev
+ libfdt1 libssl-dev liblz4-tool python-dev openssl
+```
 ‍
 
 ‍
-
+```console
 合并压缩包
->cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar
+cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar
+```
 
+```console
 解压
 
-> tar -xvf ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar -C
-
+ tar -xvf ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar -C
+```
 ‍
 
 编译
+```console
+ source build/envsetup.sh
 
-> source build/envsetup.sh
->
-> lunch rk3566_sgo-userdebug
->
-> ./build.sh -AUCKu  -d rk3566-evb2-lp4x-v10
+ lunch rk3566_sgo-userdebug
 
+ ./build.sh -AUCKu  -d rk3566-evb2-lp4x-v10
+```
 ‍
 
 ‍
@@ -80,17 +82,17 @@ cpu：12400f
 ‍
 
 如何去释放 wsl2 的硬盘空间（解决 wsl2 内删除文件后磁盘空间未减少的问题）
+```console
+ wsl --shutdown //“磁盘已经连接” 重启电脑，执行这步
 
-> wsl --shutdown //“磁盘已经连接” 重启电脑，执行这步
->
-> diskpart
->
-> select vdisk file="C:\users\…\ext4.vhdx"
-> attach vdisk readonly // "所请求的操作需要以只读方式"  请执行这一步
-> compact vdisk
-> detach vdisk
-> exit
+ diskpart
 
+ select vdisk file="C:\users\…\ext4.vhdx"
+ attach vdisk readonly // "所请求的操作需要以只读方式"  请执行这一步
+ compact vdisk
+ detach vdisk
+ exit
+```
 ‍
 
 Hello everyone, anyone reading this message on any network platform.
