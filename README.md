@@ -52,20 +52,16 @@ cpu：12400f
  unzip python-pyelftools python3-pyelftools device-tree-compiler libfdt-dev
  libfdt1 libssl-dev liblz4-tool python-dev openssl
 ```
-
 2.合并压缩包
-
 ```console
 cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar
 ```
-
 
 3.解压
 ```console
  tar -xvf ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar -C
 ```
 ‍
-
 4.编译
 ```console
  source build/envsetup.sh
@@ -74,11 +70,6 @@ cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.t
 
  ./build.sh -AUCKu  -d rk3566-evb2-lp4x-v10
 ```
-‍
-
-‍
-
-‍
 
 5.如何去释放 wsl2 的硬盘空间（解决 wsl2 内删除文件后磁盘空间未减少的问题）
 ```console
