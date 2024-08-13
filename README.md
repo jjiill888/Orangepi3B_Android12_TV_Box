@@ -42,7 +42,7 @@ cpu：12400f
 
 ‍
 
-准备工作
+1.安装依赖
 ```console
  sudo apt-get update
 
@@ -56,20 +56,20 @@ cpu：12400f
 
 ‍
 
-合并压缩包
+2.合并压缩包
 
 ```console
 cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar
 ```
 
 
-解压
+3.解压
 ```console
  tar -xvf ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar -C
 ```
 ‍
 
-编译
+4.编译
 ```console
  source build/envsetup.sh
 
@@ -83,7 +83,7 @@ cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.t
 
 ‍
 
-如何去释放 wsl2 的硬盘空间（解决 wsl2 内删除文件后磁盘空间未减少的问题）
+5.如何去释放 wsl2 的硬盘空间（解决 wsl2 内删除文件后磁盘空间未减少的问题）
 ```console
  wsl --shutdown //“磁盘已经连接” 重启电脑，执行这步
 
