@@ -52,9 +52,6 @@ cpu：12400f
  unzip python-pyelftools python3-pyelftools device-tree-compiler libfdt-dev
  libfdt1 libssl-dev liblz4-tool python-dev openssl
 ```
-‍
-
-‍
 
 2.合并压缩包
 
