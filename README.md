@@ -1,4 +1,4 @@
-# Orangepi 3B android12 
+# Orangepi 3B android12 （文档施工中）
 
 大家好，任意网络平台正在阅读此信息的每个人
 
