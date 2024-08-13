@@ -55,14 +55,16 @@ cpu：12400f
 ‍
 
 ‍
-```console
+
 合并压缩包
+
+```console
 cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar
 ```
 
-```console
-解压
 
+解压
+```console
  tar -xvf ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar -C
 ```
 ‍
