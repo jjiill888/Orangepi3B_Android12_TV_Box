@@ -54,9 +54,11 @@ cpu：至少4核cpu（amd 3100x or 9100f ）
  unzip python-pyelftools python3-pyelftools device-tree-compiler libfdt-dev
  libfdt1 libssl-dev liblz4-tool python-dev openssl
 ```
-2.合并压缩包
+2.检查md5校验值
 ```console
-cat ROCKCHIP_ANDROID12.0_SDK_RELEASE_PART_* > ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar
+windows： certutil -hashfile ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar MD5
+linux:  md5sum ROCKCHIP_ANDROID12.0_SDK_RELEASE.tar
+数值应该是:2317cf08b3fa6d172518b0644a8ac7e4
 ```
 
 3.解压
