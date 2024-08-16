@@ -52,7 +52,7 @@ cpu：至少4核cpu（amd 3100x or 9100f ）
  zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-
  core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc
  unzip python-pyelftools python3-pyelftools device-tree-compiler libfdt-dev
- libfdt1 libssl-dev liblz4-tool python-dev openssl
+ libfdt1 libssl-dev liblz4-tool python-dev openssl libncurses5
 ```
 2.检查md5校验值
 ```console
