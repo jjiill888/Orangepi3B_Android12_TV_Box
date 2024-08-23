@@ -1,0 +1,17 @@
+--- android12/frameworks/base/core/res/res/values/config.xml	2024-08-09 15:11:56.510547836 +0800
++++ android12/frameworks/base/core/res/res/values new_config.xml	2024-08-19 10:19:32.463724051 +0800
+@@ -3680,6 +3680,14 @@
+     -->
+     <integer name="config_largeScreenSmallestScreenWidthDp">600</integer>
+ 
++    <dimen name="config_screenWidthDp">600</dimen>
++
++    <dimen name="config_screenHeightDp">432</dimen>
++    <!-- Smallest screen width for the device -->
++    <dimen name="config_smallestScreenWidthDp">320</dimen>
++    <!-- Screen density for the device -->
++    <integer name="config_densityDpi">640</integer>
++
+     <!-- True if the device is using legacy split. -->
+     <bool name="config_useLegacySplit">false</bool>
+ 
